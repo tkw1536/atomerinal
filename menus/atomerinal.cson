@@ -1,0 +1,19 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Atomerinal'
+      'submenu': [
+        {
+          'label': 'Open terminal here'
+          'command': 'atomerinal:open-terminal-here'
+        }, 
+        {
+          'label': 'Open terminal in project root(s)'
+          'command': 'atomerinal:open-terminal-in-root'
+        }
+      ]
+    ]
+  }
+]
