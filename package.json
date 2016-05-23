@@ -1,13 +1,15 @@
 {
   "name": "atomerinal",
   "main": "./lib/atomerinal",
-  "version": "0.1.0",
-  "description": "Opens a terminal in the folder of the current file. ",
+  "version": "0.2.0",
+  "description": "Open a terminal on the current file or folder",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": [
       "atomerinal:open-terminal-here",
-      "atomerinal:open-terminal-in-root"
+      "atomerinal:open-terminal-in-root",
+      "atomerinal:open-terminal-treeview",
+      "atomerinal:open-terminal-treeview-root"
     ]
   },
   "repository": "https://github.com/tkw1536/atomerinal",

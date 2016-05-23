@@ -21,14 +21,14 @@ module.exports = (dirname, filename) ->
   # app and arguments
   app = atom.config.get('atomerinal.app')
   args = replace_variables atom.config.get('atomerinal.args'), {'directory': "\"#{dirname}\"", 'file': "\"#{filename}\""}
-  
+
   # additional config settings
   setWorkingDirectory = atom.config.get('atomerinal.setWorkingDirectory')
   unwrapCommand = atom.config.get('atomerinal.unwrapCommand')
-  
+
   # Start assembling the command line
   command = "\"#{app}\" #{args}"
-  
+
   # On Mac (darwin) we need to wrap the command with open -a
   if platform() == "darwin" && !unwrapCommand
     command = "open -a " + command
@@ -36,11 +36,11 @@ module.exports = (dirname, filename) ->
   # For Windows (win32) we need to wrap the command with start
   if platform() == "win32" && !unwrapCommand
     command = "start \"\" " + command
-  
+
   # environment for the process to call
-  environment = parse_environment atom.config.get('atomerinal.environmentVariables'), process.env, {'directory': "#{dirname}", 'file': "#{dirname}"}
-  
-  # For debugging enable this line. 
+  environment = parse_environment atom.config.get('atomerinal.environmentVariables'), process.env, {'directory': "#{dirname}", 'file': "#{filename}"}
+
+  # For debugging enable this line.
   # console.log("atomerinal executing: ", command, environment)
 
   # Set the working directory if configured

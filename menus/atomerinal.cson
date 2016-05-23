@@ -8,12 +8,20 @@
         {
           'label': 'Open terminal here'
           'command': 'atomerinal:open-terminal-here'
-        }, 
+        },
         {
-          'label': 'Open terminal in project root(s)'
+          'label': 'Open terminal in project root'
           'command': 'atomerinal:open-terminal-in-root'
         }
       ]
     ]
   }
 ]
+
+'context-menu':
+  '.tree-view.full-menu': [
+    {'type': 'separator'}
+    {'label': 'Open terminal here', 'command': 'atomerinal:open-terminal-treeview'}
+    {'label': 'Open terminal in root', 'command': 'atomerinal:open-terminal-treeview-root'}
+    {'type': 'separator'}
+  ]
