@@ -22,6 +22,6 @@
   '.tree-view.full-menu': [
     {'type': 'separator'}
     {'label': 'Open Terminal Here', 'command': 'atomerinal:open-terminal-treeview'}
-    {'label': 'Open Terminal in Project Root', 'command': 'atomerinal:open-terminal-treeview-root'}
+    {'label': 'Open Terminal In Project Root', 'command': 'atomerinal:open-terminal-treeview-root'}
     {'type': 'separator'}
   ]
