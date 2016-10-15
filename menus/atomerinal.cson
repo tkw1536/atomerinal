@@ -10,7 +10,7 @@
           'command': 'atomerinal:open-terminal-here'
         },
         {
-          'label': 'Open Terminal in Project Root'
+          'label': 'Open Terminal In Project Root'
           'command': 'atomerinal:open-terminal-in-root'
         }
       ]
