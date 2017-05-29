@@ -13,8 +13,7 @@ helpers =
     # adapted from https://github.com/magbicaleman/open-in-browser/blob/master/lib/open-in-browser.coffee
     if atom.packages.isPackageLoaded('tree-view') == true
       treeView = atom.packages.getLoadedPackage('tree-view')
-      treeView = require(treeView.mainModulePath)
-      packageObj = treeView.serialize()
+      packageObj = treeView.mainModule.treeView
     packageObj
 
   # gets the project root path associated with pth

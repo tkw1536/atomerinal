@@ -1,3 +1,5 @@
+## 0.3.0 - tree-view fixes
+* Bugix with new version of treeview
 ## 0.2.0 - tree-view support
 * Better support for tree-view package (see #2, thanks @rm-code for the suggestion)
   * open a terminal on the current tree-view item if it is focused
