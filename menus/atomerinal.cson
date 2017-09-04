@@ -6,11 +6,11 @@
       'label': 'Atomerinal'
       'submenu': [
         {
-          'label': 'Open terminal here'
+          'label': 'Open Terminal Here'
           'command': 'atomerinal:open-terminal-here'
         },
         {
-          'label': 'Open terminal in project root'
+          'label': 'Open Terminal In Project Root'
           'command': 'atomerinal:open-terminal-in-root'
         }
       ]
@@ -21,7 +21,7 @@
 'context-menu':
   '.tree-view.full-menu': [
     {'type': 'separator'}
-    {'label': 'Open terminal here', 'command': 'atomerinal:open-terminal-treeview'}
-    {'label': 'Open terminal in root', 'command': 'atomerinal:open-terminal-treeview-root'}
+    {'label': 'Open Terminal Here', 'command': 'atomerinal:open-terminal-treeview'}
+    {'label': 'Open Terminal In Project Root', 'command': 'atomerinal:open-terminal-treeview-root'}
     {'type': 'separator'}
-  ]
+]
