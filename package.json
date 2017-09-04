@@ -1,7 +1,7 @@
 {
   "name": "atomerinal",
   "main": "./lib/atomerinal",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Open a terminal on the current file or folder",
   "keywords": [],
   "activationCommands": {
